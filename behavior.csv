@@ -1,0 +1,16 @@
+student_id,suspended,interaction_level,class_behavior,peer_behavior
+S001,No,High,Excellent,Positive
+S002,No,High,Good,Positive
+S003,No,Medium,Average,Neutral
+S004,No,High,Excellent,Positive
+S005,Yes,Low,Poor,Concern
+S006,No,Medium,Good,Positive
+S007,No,Low,Average,Neutral
+S008,No,High,Excellent,Positive
+S009,No,Medium,Good,Positive
+S010,No,Low,Average,Neutral
+S011,Yes,Low,Poor,Concern
+S012,No,High,Excellent,Positive
+S013,No,Medium,Average,Neutral
+S014,No,High,Good,Positive
+S015,No,Medium,Average,Neutral
