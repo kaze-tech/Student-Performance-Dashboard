@@ -18,7 +18,7 @@ CLASS_OPTIONS = [
     "III BCA",
     "III BSc IT",
 ]
-TEACHER_NAME = "Dr. Priya Raman"
+TEACHER_NAME = "Bruce Wayne"
 CALENDAR_ICON = "\U0001F4C5"
 CHART_ICON = "\U0001F4CA"
 STUDENTS_ICON = "\U0001F465"
@@ -728,12 +728,10 @@ def render_page_header(title: str, on_back) -> None:
         if st.button("Back", width="stretch"):
             on_back()
     with center_col:
-        st.markdown(
+        st.html(
             f"""
             <div class="page-title">{html.escape(title)}</div>
-            <div class="page-subtitle">Use the same app flow with a cleaner, theme-aware layout.</div>
-            """,
-            unsafe_allow_html=True,
+            """
         )
     with right_col:
         render_theme_switcher()
@@ -839,7 +837,7 @@ def render_risk_distribution_chart(students: pd.DataFrame) -> None:
             """
         )
 
-    st.markdown(
+    st.html(
         f"""
         <div class="analytics-card">
             <div class="section-title">Risk Visualization</div>
@@ -848,8 +846,7 @@ def render_risk_distribution_chart(students: pd.DataFrame) -> None:
                 {''.join(rows)}
             </div>
         </div>
-        """,
-        unsafe_allow_html=True,
+        """
     )
 
 
@@ -881,15 +878,14 @@ def render_at_risk_panel(students: pd.DataFrame) -> None:
             """
         )
 
-    st.markdown(
+    st.html(
         f"""
         <div class="panel-card">
             <div class="section-title">Top 3 Students Needing Attention</div>
             <div class="section-note">These students are ranked by attendance pressure, GPA pressure, and past failures.</div>
             {''.join(items)}
         </div>
-        """,
-        unsafe_allow_html=True,
+        """
     )
 
 
@@ -1164,7 +1160,7 @@ def render_student_list(
             rank_chip = (
                 f'<span class="rank-chip">Rank #{int(student["rank"]):02d}</span>' if show_ranking else ""
             )
-            st.markdown(
+            st.html(
                 f"""
                 <div class="student-directory-card">
                     <div class="directory-head">
@@ -1192,8 +1188,7 @@ def render_student_list(
                         </div>
                     </div>
                 </div>
-                """,
-                unsafe_allow_html=True,
+                """
             )
         with button_col:
             if st.button("View Profile", key=f"student_{student['student_id']}", width="stretch"):
@@ -1366,6 +1361,13 @@ def render_student_detail(student: pd.Series, on_back) -> None:
         risk_analysis,
         "Rule-based academic risk is derived from GPA, attendance, and past failures.",
     )
+
+
+
+
+
+
+
 
 
 
