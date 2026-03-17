@@ -47,7 +47,7 @@ It is designed to analyze student data such as **marks, attendance, and behavior
 
 ## At-Risk Students UI
 
-### At-Risk Students (Light Mode)
+### At-Risk Students 
 <img width="811" height="835" alt="Image" src="https://github.com/user-attachments/assets/7cd4757c-9391-4986-8988-85f52f181501" />
 
 <img width="745" height="723" alt="Image" src="https://github.com/user-attachments/assets/8308aff0-849a-4957-87f4-cea91d537818" />
@@ -76,3 +76,4 @@ https://github.com/user-attachments/assets/0d3fd1d9-6e4a-4983-961f-cd66bbdffac0
 1. Install dependencies:
 ```bash
 pip install -r requirements.txt
+streamlit run app.py  
